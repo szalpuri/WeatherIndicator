@@ -1,0 +1,172 @@
+/* Stylesheet for weather website */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #666;
+    background-color: #ccc;
+    margin: 0;
+}
+
+header,
+nav,
+main,
+footer {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 65%;
+    margin: 0 auto;
+    max-width: 768px;
+    min-width: 320px;
+}
+
+header,
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+header a:link,
+footer a:link {
+    color: #999;
+}
+
+footer {
+    clear: both;
+    color: #999;
+}
+
+main {
+    background-color: white;
+    padding: 0 1em;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h2 {
+    clear: both;
+    border-bottom: 1px solid;
+    padding-top: .5em;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0; padding: 0;
+    overflow: hidden;
+    background-color: #666;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+table,
+caption {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    margin: 0 0 1em;
+}
+
+td,
+caption {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    background-color: #ccc;
+    border-bottom: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+td.left {
+    text-align: left;
+    padding-left: .25em;
+}
+
+td.right {
+    text-align: right;
+    padding-right: 0;
+}
+
+form,
+input,
+select {
+    margin: 1em 0;
+}
+
+select {
+    min-width: 10em;
+}
+
+label {
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid #333;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#current {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 35%;
+}
+
+#overview {
+    margin: auto;
+    width: 60%;
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    header,
+    nav,
+    main,
+    footer {
+        width: 100%;
+    }
+    #current {
+        float: none;
+    }
+}

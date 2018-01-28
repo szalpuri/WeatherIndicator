@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--Surbhi Zalpuri(8032617)-->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Weather Wizard</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+
+	<header>
+		<img src="media/logo.png" width="75" id="logo" alt="Site Logo">
+		<h1>Weather Wizard</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#conditions">Current Conditions</a></li>
+			<li><a href="#forecast">Forecast</a></li>
+			<li><a href="#historical">Historical Data</a></li>
+
+		</ul>
+	</nav>
+
+	<main>
+		<h2 id="conditions">Current Conditions</h2>
+		<table id="current">
+			<caption>Current Conditions</caption>
+			<tr>
+				<td rowspan="2">
+					<img src="media/02.png" width="75" alt="Sunny Pic"><br>Sunny<br>21&deg;C
+				</td>
+				<th colspan="2">January 12, 2018</th>
+			</tr>
+			<tr>
+				<td class="right">Temperature: <br>Humidity:<br>Wind:</td>
+				<td class="left">5&deg;C<br>65%<br>5Km/hr</td>
+			</tr>
+		</table>
+		<h3>Waterloo</h3>
+		<form>
+			<label for="drop-down">My Location:</label>
+			<select id="drop-down">
+					<option value="Waterloo">Waterloo</option>
+					<option value="Kitchener">Kitchener</option>
+					<option value="Cambridge">Cambridge</option>				
+			</select>
+		</form>
+		<h2 id="forecast">Detailed Forecast</h2>
+		<table id="overview">
+			<caption>Forecast Overview</caption>
+			<tr>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+
+			</tr>
+			<tr>
+				<td><img src="media/02.png" alt="Sunny Pic"><br>Sunny<br>5&deg;C</td>
+				<td><img src="media/10.png" alt="Cloudy Pic"><br>Cloudy<br>1&deg;C</td>
+				<td><img src="media/08.png" alt="Snow Pic"><br>Snow<br>-8&deg;C</td>
+				<td><img src="media/16.png" alt="Snow Pic"><br>Snow<br>-7&deg;C</td>
+				<td><img src="media/06.png" alt="Rain Pic"><br>Rain<br>5&deg;C</td>
+
+			</tr>
+		</table>
+		<dl>
+			<dt>Monday</dt>
+			<dd>Mainly sunny, high of 5&deg;C</dd>
+			<dt>Tuesday</dt>
+			<dd>A few clouds, increasing cloudiness after midnight</dd>
+			<dt>Wednesday</dt>
+			<dd>Mainly cloudy, 30% chance of flurries in the evening</dd>
+			<dt>Thursday</dt>
+			<dd>Cloudy with 60% chance of snow</dd>
+			<dt>Friday</dt>
+			<dd>Blizzard warning</dd>
+		</dl>
+		<h2 id="historical">Historical Data</h2>
+		<p>Request a summary of selected readings …</p>
+		<form>
+			<label for="Year">Year</label>
+			<select id="Year">
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018" selected>2018</option>
+			</select>
+			<label for="Season">Season</label>
+			<select id="Season">					
+					<option value="Spring">Spring</option>	
+					<option value="Summer">Summer</option>	
+					<option value="Fall">Fall</option>
+					<option value="Winter" selected>Winter</option>
+			</select>
+			<fieldset>
+				<legend>Location</legend>
+				<input type="radio" name="location" id="r1" value="Waterloo">
+				<label for="r1">Waterloo</label>
+				<input type="radio" name="location" id="r2" value="Kitchener">
+				<label for="r2">Kitchener</label>
+				<input type="radio" name="location" id="r3" value="Cambridge">
+				<label for="r3">Cambridge</label>
+			</fieldset>
+			<fieldset>
+				<legend>Readings</legend>
+				<label for="c1">Temperature</label>
+				<input type="checkbox" id="c1">
+				<label for="c2">Humidity</label>
+				<input type="checkbox" id="c2">
+				<label for="c3">Wind Speed</label>
+				<input type="checkbox" id="c3">
+			</fieldset>
+			<input type="reset" id="reset" value="Reset Fields">
+			<input type="submit" id="submit" value="Request">
+		</form>
+	</main>
+	<footer>
+		<p>Designed by: <a href="mailto:surbhizalpuri@ymail.com" target="_top">Surbhi Zalpuri</a></p>
+		<p>Copyright &copy; 2018</p>
+	</footer>
+
+</body>
+
+</html>
